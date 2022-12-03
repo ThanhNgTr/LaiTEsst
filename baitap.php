@@ -10,7 +10,7 @@
 			while(($entry = readdir($resource)) != FALSE){
 				if($entry != '.' && $entry != '..')
 				{
-					echo "<a href='BaiTapTH/MCH/$entry'>$entry</a></br>";
+					echo "<a  href='index.php?content=showarr&id=$entry'>$entry</a></br>";
 				}
 			}
 		?>
@@ -24,7 +24,7 @@
 				while(($entry = readdir($resource)) != FALSE){
 					if($entry != '.' && $entry != '..')
 					{
-						echo "<a href='BaiTapTH/PHPvaForm/$entry'>$entry</a></br>";
+						echo "<a href='index.php?content=showabt&id=$entry'>$entry</a></br>";
 					}
 				}
 			?>
@@ -38,7 +38,7 @@
 				while(($entry = readdir($resource)) != FALSE){
 					if($entry != '.' && $entry != '..')
 					{
-						echo "<a href='BaiTapTH/SQL/Bai2/$entry'>$entry</a></br>";
+						echo "<a href='index.php?content=showasq&id=$entry'>$entry</a></br>";
 					}
 				}
 			?>
